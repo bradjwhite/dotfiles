@@ -1,0 +1,1 @@
+{"githubUsername":"bradjwhite","apiKey":"1dc1668699ba90f3daa91183cd58378b713e8461","exercismDirectory":"/Users/bwhite/Dropbox/dev/apps/exercism.io","hostname":"http://exercism.io"}

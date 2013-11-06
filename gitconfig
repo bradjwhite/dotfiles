@@ -1,0 +1,15 @@
+[user]
+	name = Bradford White
+	email = bradjwhite926@gmail.com
+[alias]
+  co = checkout
+[core]
+	editor = vim
+[color]
+	ui = true
+[merge]
+  tool = vimdiff
+[push]
+  default = simple
+[credential]
+  helper = osxkeychain
