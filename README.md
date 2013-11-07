@@ -6,9 +6,9 @@ The true genious here is Ben Orenstein and you should check
 out his stuff. He is r00k on github.
 
 # Installation
-git clone https://github.com/bradjwhite/dotfiles ~/.dotfiles
-cd ~/.dotfiles
-rake install
+* git clone https://github.com/bradjwhite/dotfiles ~/.dotfiles
+* cd ~/.dotfiles
+* rake install
 
 Vim plugins are managed through vundle. You'll need to install
 vundle to get them.
