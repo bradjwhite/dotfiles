@@ -1,8 +1,37 @@
-" Enable Tim Pope's excellent pathogen.vim plugin
-execute pathogen#infect()
+" Use Pathogen
+call pathogen#incubate()
+call pathogen#helptags()
 
-" Make VIM less compatible with vi and more useful
-set nocompatible
+"==================================================
+" Vundle stuff
+"==================================================
+set nocompatible                    " be iMproved
+filetype off                        " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let vundle manage Vundle (required)!
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+" Repos on GitHub
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'wincent/Command-T'
+
+
+"==================================================
+" Ruby stuff
+"==================================================
+syntax on                 " Enable syntax highlighting
+filetype plugin indent on " Enable filetype-specific indenting and plugins
+
 
 " Enable a text-opject for ruby blocks
 runtime macros/matchit.vim
@@ -10,7 +39,6 @@ runtime macros/matchit.vim
 " Autocmd settings
 if has("autocmd")
   " Enables plugin, auto-indent and file type detection
-  filetype plugin indent on
 
   "Syntax of these languages is fussy over tabs Vs spaces
   autocmd FileType make       setlocal ts=8 sts=8 sw=8 noet
@@ -91,8 +119,6 @@ set nobackup
 set background=dark
 "colorscheme ir_black
 colorscheme darkblue
-syntax on
-syntax enable
 
 " Turn on search highlighting
 set hlsearch

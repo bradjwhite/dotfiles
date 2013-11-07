@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/bwhite/Dropbox/dev/apps/poodr'
+let g:netrw_dirhist_2='/Applications/FuseIDE-6.0.0/readme'
+let g:netrw_dirhist_3='/Users/bwhite/Dropbox/dev/apps/rails-tut-32-2013/rails_projects/sample_app/app/views/users'
+let g:netrw_dirhist_4='/Users/bwhite/.dotfiles/tmp'
+let g:netrw_dirhist_5='/Users/bwhite/.dotfiles/vim/bundle'
