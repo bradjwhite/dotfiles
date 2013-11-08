@@ -157,7 +157,7 @@ nmap <leader>l  :set list!<CR>
 "¬ = ctrl-v u00ac
 "☠ = ctrl-v u2620
 
-set listchars=tab:▸\ ,eol:¬
+" set listchars=tab:▸\ ,eol:¬
 
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
