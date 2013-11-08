@@ -30,14 +30,16 @@ task :install do
 
   # Handle ssh pubkey on its own
   puts "Linking public ssh key"
-  system %Q{rm "$HOME/.ssh/id_rsa.pub"}
+  if File.exists($HOME/.ssh/id_rsa.pub)
+    system %Q{rm "$HOME/.ssh/id_rsa.pub"}
+  end
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
 
   # Need to do this to make vim use RVM's ruby version
-  puts "Moving zshenv to zshrc"
-  system %Q{sudo mv /etc/zshenv /etc/zshrc}
+  #puts "Moving zshenv to zshrc"
+  #system %Q{sudo mv /etc/zshenv /etc/zshrc}
 
-  system %Q{mkdir ~/.tmp}
+  #system %Q{mkdir ~/.tmp}
 end
 
 def replace_file(file)
