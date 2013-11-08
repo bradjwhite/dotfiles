@@ -9,7 +9,3 @@
 	ui = true
 [merge]
   tool = vimdiff
-[push]
-  default = simple
-[credential]
-  helper = osxkeychain
