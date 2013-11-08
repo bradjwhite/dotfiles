@@ -30,7 +30,7 @@ task :install do
 
   # Handle ssh pubkey on its own
   puts "Linking public ssh key"
-  if File.exists("$HOME/.ssh/id_rsa.pub")
+  if File.exists?("$HOME/.ssh/id_rsa.pub")
     system %Q{rm "$HOME/.ssh/id_rsa.pub"}
   end
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
