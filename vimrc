@@ -1,6 +1,6 @@
 " Use Pathogen
-call pathogen#incubate()
-call pathogen#helptags()
+"call pathogen#incubate()
+"call pathogen#helptags()
 
 "==================================================
 " Vundle stuff
