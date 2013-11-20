@@ -23,7 +23,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
-Bundle 'wincent/Command-T'
+"Bundle 'wincent/Command-T'
 
 
 "==================================================
